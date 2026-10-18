@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a2b">
+  <title>Course Copilot · Evidence-first study workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="rail">
+      <a class="brand" href="#top"><span class="brand-mark">C</span><span>course<span class="brand-muted">copilot</span></span></a>
+      <div class="rail-label">WORKSPACE</div>
+      <nav class="nav">
+        <button class="nav-item active" data-panel="ask"><span class="nav-glyph">⌕</span> Ask workspace</button>
+        <button class="nav-item" data-panel="library"><span class="nav-glyph">▤</span> Source library</button>
+        <button class="nav-item" data-panel="evaluate"><span class="nav-glyph">◉</span> Retrieval eval</button>
+      </nav>
+      <div class="rail-bottom"><span class="status-dot"></span><span id="health-label">Connecting to local API</span></div>
+    </aside>
+    <main class="main" id="top">
+      <header class="topbar"><div><span class="eyebrow">DOCUMENT INTELLIGENCE</span><h1>Study with evidence.</h1></div><a class="github-link" href="https://github.com/" target="_blank" rel="noreferrer">Project source <span>↗</span></a></header>
+      <section class="intro"><div><p class="intro-copy">Search your course material, inspect the passages behind every result, and measure retrieval quality before trusting an answer.</p><div class="chip-row"><span class="chip">HYBRID RETRIEVAL</span><span class="chip">CITATION TRACE</span><span class="chip">LOCAL-FIRST</span></div></div><div class="intro-mark">CC<span>01 / 03</span></div></section>
+      <section class="panel visible" id="panel-ask">
+        <div class="panel-head"><div><span class="eyebrow">ASK THE INDEX</span><h2>What are you trying to understand?</h2></div><span class="keycap">⌘ ↵</span></div>
+        <div class="ask-box"><textarea id="question" placeholder="Ask a question grounded in the documents you have indexed…"></textarea><div class="ask-actions"><span>Answers show their source excerpts</span><button id="ask-button" class="primary">Find evidence <span>↗</span></button></div></div>
+        <div class="results-head"><span class="eyebrow">RETRIEVED EVIDENCE</span><span id="result-mode" class="quiet"></span></div>
+        <div id="answer" class="answer-block empty-state">Your answer and cited source passages will appear here.</div>
+        <div id="evidence" class="evidence-list"></div>
+      </section>
+      <section class="panel" id="panel-library">
+        <div class="panel-head"><div><span class="eyebrow">YOUR SOURCE LIBRARY</span><h2>Documents in the index</h2></div><span id="doc-count" class="count-pill">0 SOURCES</span></div>
+        <div class="demo-banner"><div><strong>Try the public-source demo</strong><span>Curated notes with links to official academic documents.</span></div><button id="load-demo" class="secondary">Load sample sources</button></div>
+        <div id="documents" class="document-list"></div>
+        <div class="upload-card"><div><h3>Add course material</h3><p>PDF, TXT, or Markdown · up to 8 MB · text PDFs only</p></div><label class="secondary upload-label" for="upload-file">Choose file</label><input id="upload-file" type="file" accept=".pdf,.txt,.md"></div>
+      </section>
+      <section class="panel" id="panel-evaluate">
+        <div class="panel-head"><div><span class="eyebrow">REPRODUCIBLE CHECK</span><h2>Test retrieval against labels</h2></div><span class="count-pill">NO ANSWER SCORING</span></div>
+        <p class="section-copy">Upload JSONL cases with a question and its expected source filename. Metrics describe retrieval only; they do not judge generated answer correctness.</p>
+        <div class="eval-controls"><label class="secondary upload-label" for="eval-file">Choose JSONL</label><input id="eval-file" type="file" accept=".jsonl"><label class="topk-label">Top k <select id="top-k"><option>3</option><option selected>5</option><option>10</option></select></label><button id="eval-demo" class="secondary">Run 67-query demo <span>↗</span></button><button id="eval-button" class="primary">Run uploaded set <span>↗</span></button></div>
+        <div id="metrics" class="metric-grid"></div><div id="eval-details" class="eval-details"></div>
+      </section>
+      <footer><span>Independent portfolio project · not an official BITS Pilani service</span><span>Sources remain inspectable</span></footer>
+    </main>
+  </div>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

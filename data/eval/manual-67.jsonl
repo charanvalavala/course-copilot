@@ -1,0 +1,67 @@
+{"question":"Who decides which courses run in a semester and where are actual offerings listed?","expected_sources":["course-offerings.md"]}
+{"question":"If a subject is in the bulletin, is it guaranteed to be taught this term?","expected_sources":["course-offerings.md"]}
+{"question":"When can students see the list of courses offered this semester?","expected_sources":["course-offerings.md"]}
+{"question":"Do facilities and programme progression affect course availability?","expected_sources":["course-offerings.md"]}
+{"question":"Can I choose an elective just because it appears in the bulletin?","expected_sources":["elective-planning.md"]}
+{"question":"What should I check before planning to take an elective?","expected_sources":["elective-planning.md"]}
+{"question":"Are previous timetables a guarantee that a course will run again?","expected_sources":["elective-planning.md"]}
+{"question":"Which list controls elective choices for the current semester?","expected_sources":["elective-planning.md"]}
+{"question":"Does registration in a course require prior permission?","expected_sources":["registration-permission.md"]}
+{"question":"Where do I find the binding rules about enrolling in a course?","expected_sources":["registration-permission.md"]}
+{"question":"Can this summary replace the full academic regulations?","expected_sources":["registration-permission.md"]}
+{"question":"What does the bulletin say about permission to register?","expected_sources":["registration-permission.md"]}
+{"question":"How should I handle a course with a prerequisite?","expected_sources":["prerequisites-and-sequences.md"]}
+{"question":"Does a missing restriction mean I can rearrange the semester sequence?","expected_sources":["prerequisites-and-sequences.md"]}
+{"question":"Where are course prerequisites and semester order explained?","expected_sources":["prerequisites-and-sequences.md"]}
+{"question":"Can prerequisite conditions be waived?","expected_sources":["prerequisites-and-sequences.md"]}
+{"question":"How many regular semesters are in the academic calendar?","expected_sources":["regular-semesters.md"]}
+{"question":"Is the summer term automatically a regular semester?","expected_sources":["regular-semesters.md"]}
+{"question":"When does the summer term fit into the calendar according to the bulletin?","expected_sources":["regular-semesters.md"]}
+{"question":"Are there programme-specific exceptions for the summer term?","expected_sources":["regular-semesters.md"]}
+{"question":"When was Semester II registration scheduled in the 2025-26 calendar?","expected_sources":["semester-two-start.md"]}
+{"question":"When did Semester II classwork start in January 2026?","expected_sources":["semester-two-start.md"]}
+{"question":"What date was listed for second semester student registration?","expected_sources":["semester-two-start.md"]}
+{"question":"Where can I confirm campus and programme variations to the semester start?","expected_sources":["semester-two-start.md"]}
+{"question":"When were the Semester II mid-semester exams in 2026?","expected_sources":["midsemester-exams.md"]}
+{"question":"Was classwork suspended during the midsemester examination period?","expected_sources":["midsemester-exams.md"]}
+{"question":"Which dates did the academic calendar give for mid-semester examinations?","expected_sources":["midsemester-exams.md"]}
+{"question":"For how long were mid-semester exams scheduled in March 2026?","expected_sources":["midsemester-exams.md"]}
+{"question":"What was the final date to withdraw from a course in Semester II 2025-26?","expected_sources":["course-withdrawal.md"]}
+{"question":"When did course withdrawal close according to the 2025-26 calendar?","expected_sources":["course-withdrawal.md"]}
+{"question":"Where can I verify the course withdrawal deadline for this academic year?","expected_sources":["course-withdrawal.md"]}
+{"question":"Is March 20 a withdrawal deadline for every academic year?","expected_sources":["course-withdrawal.md"]}
+{"question":"When did the 2025-26 Semester II comprehensive exams begin and end?","expected_sources":["comprehensive-exams.md"]}
+{"question":"What was the semester end date after comprehensive examinations?","expected_sources":["comprehensive-exams.md"]}
+{"question":"When was the comprehensive exam period in May 2026?","expected_sources":["comprehensive-exams.md"]}
+{"question":"How can I check whether the comprehensive exam dates still apply?","expected_sources":["comprehensive-exams.md"]}
+{"question":"When did the summer term and summer vacation begin in 2026?","expected_sources":["summer-term-and-practice-school.md"]}
+{"question":"What date did Practice School I begin in 2025-26?","expected_sources":["summer-term-and-practice-school.md"]}
+{"question":"When did Practice School II end in June 2026?","expected_sources":["summer-term-and-practice-school.md"]}
+{"question":"What was the listed end date for Practice School I?","expected_sources":["summer-term-and-practice-school.md"]}
+{"question":"What holiday is listed for the Hyderabad campus on March 19, 2026?","expected_sources":["hyderabad-campus-holiday.md"]}
+{"question":"Does the Ugadi holiday entry apply to Hyderabad campus?","expected_sources":["hyderabad-campus-holiday.md"]}
+{"question":"Where can I verify campus-specific holiday schedules?","expected_sources":["hyderabad-campus-holiday.md"]}
+{"question":"Could holiday dates differ by campus or programme?","expected_sources":["hyderabad-campus-holiday.md"]}
+{"question":"Where are Academic Regulations and the term timetable linked?","expected_sources":["official-academic-documents.md"]}
+{"question":"What documents are on the Institute Important Documents page?","expected_sources":["official-academic-documents.md"]}
+{"question":"Which document should I check for courses actually running this term?","expected_sources":["official-academic-documents.md"]}
+{"question":"Does the important documents page list earlier bulletins too?","expected_sources":["official-academic-documents.md"]}
+{"question":"Which division handles first-degree undergraduate academic matters?","expected_sources":["academic-divisions.md"]}
+{"question":"Who handles academic matters for higher-degree and PhD programmes?","expected_sources":["academic-divisions.md"]}
+{"question":"Is AUGS Division for undergraduate programmes?","expected_sources":["academic-divisions.md"]}
+{"question":"Where should a student check the current contact route for academic services?","expected_sources":["academic-divisions.md"]}
+{"question":"What does the cafeteria serve for dinner tonight?","expected_sources":[],"should_abstain":true}
+{"question":"What is the password for campus Wi-Fi?","expected_sources":[],"should_abstain":true}
+{"question":"Can you tell me my current CGPA?","expected_sources":[],"should_abstain":true}
+{"question":"Which classroom is my lecture in tomorrow?","expected_sources":[],"should_abstain":true}
+{"question":"How many seats are available in this elective now?","expected_sources":[],"should_abstain":true}
+{"question":"What is the hostel mess fee?","expected_sources":[],"should_abstain":true}
+{"question":"What is the attendance policy for data structures?","expected_sources":[],"should_abstain":true}
+{"question":"Show my transcript and semester grades.","expected_sources":[],"should_abstain":true}
+{"question":"Am I eligible for a scholarship based on my personal marks?","expected_sources":[],"should_abstain":true}
+{"question":"When is my assignment due?","expected_sources":[],"should_abstain":true}
+{"question":"What bus route should I take to campus?","expected_sources":[],"should_abstain":true}
+{"question":"Who won the inter-campus football tournament?","expected_sources":[],"should_abstain":true}
+{"question":"What is the campus security phone number?","expected_sources":[],"should_abstain":true}
+{"question":"What is the current hostel allocation status for my room?","expected_sources":[],"should_abstain":true}
+{"question":"What are the dining hall hours this week?","expected_sources":[],"should_abstain":true}
