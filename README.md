@@ -7,7 +7,7 @@ The BITS-specific demo is one use case, not an official BITS Pilani service. Use
 ## What it demonstrates
 
 - PDF, TXT, and Markdown ingestion with content hashing, page provenance, bounded uploads, and overlapping chunks.
-- Dense retrieval with `sentence-transformers/all-MiniLM-L6-v2` plus SQLite FTS5 BM25, fused with reciprocal-rank fusion.
+- Dense retrieval with `sentence-transformers/all-MiniLM-L6-v2` plus SQLite FTS5 BM25, fused with a 2:1 BM25-to-dense reciprocal-rank weight selected in a documented retrieval ablation.
 - Evidence excerpts with file and page citations; extractive evidence mode remains available when Ollama is not configured.
 - Optional local answer generation through Ollama with a grounded-answer prompt and a citation-number check against the retrieved evidence list.
 - A manually labeled 67-query JSONL evaluation set reporting Hit@1, Hit@k, MRR, and abstention accuracy, clearly scoped to retrieval relevance.
@@ -28,6 +28,16 @@ uvicorn course_copilot.api:app --reload
 
 Open `http://127.0.0.1:8000`. The embedding model downloads on first use. The app works without Ollama by returning the retrieved excerpts instead of presenting a generated answer as if one existed.
 
+On macOS or Linux, use:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+export PYTHONPATH=src
+uvicorn course_copilot.api:app --reload
+```
+
 For local generation, install Ollama, pull `qwen2.5:3b` or set `OLLAMA_MODEL`, and start the Ollama service. For container usage, build and run the included Dockerfile with a persistent volume mounted at `/app/data/runtime`.
 
 ## Evaluation
@@ -47,6 +57,49 @@ Invoke-RestMethod "http://127.0.0.1:8000/api/evaluate/demo?top_k=5" | ConvertTo-
 ```
 
 The endpoint reports Hit@k and mean reciprocal rank. These do not measure answer correctness, whether a cited passage supports every generated claim, or student outcomes. The optional generation path rejects missing or out-of-range citation numbers, but does not independently score semantic faithfulness. Use a held-out, manually checked query set and report the number of queries, corpus version, pinned embedding model revision, and retrieval settings alongside any score.
+
+### Retrieval ablation
+
+Reproduce the same-query comparison after the embedding model has downloaded:
+
+```powershell
+$env:PYTHONPATH = "src"
+python scripts/ablation.py
+```
+
+```bash
+PYTHONPATH=src python scripts/ablation.py
+```
+
+The current 13-note corpus results use `top_k=5` and the pinned MiniLM revision. Retrieval metrics are computed over the 52 answerable questions; abstention accuracy is computed over the 15 out-of-scope questions.
+
+| Retriever | Hit@1 | Hit@5 | MRR | Abstention accuracy |
+| --- | ---: | ---: | ---: | ---: |
+| BM25 only | 0.904 | 1.000 | 0.946 | 0.933 |
+| Dense only | 0.712 | 0.904 | 0.808 | 1.000 |
+| Equal-weight RRF | 0.846 | 1.000 | 0.923 | 0.933 |
+| Weighted RRF, BM25:dense = 2:1 | 0.923 | 1.000 | 0.962 | 0.933 |
+| Weighted RRF, 2:1 with a dense gate | 0.865 | 0.923 | 0.894 | 1.000 |
+| Weighted RRF, BM25:dense = 3:1 | 0.904 | 1.000 | 0.952 | 0.933 |
+
+The default uses the 2:1 weighting: it ranked the expected source first on 48 of 52 answerable queries, compared with 44 for equal-weight RRF. The dense gate removed the only false positive on the 15 out-of-scope prompts, but also lowered Hit@5 from 1.000 to 0.923, so it was not selected. The remaining false positive is “How many seats are available in this elective now?”; the demo notes discuss course offerings but do not provide live seat counts.
+
+The four Hit@1 misses all placed the expected file at rank 2: whether a bulletin guarantees a course will run; when students can see the semester's course list; where the binding enrollment rules are; and which document lists courses actually running this term. This explains the observed MRR of 0.962 on this set.
+
+The benchmark is small and self-authored. The weighting was selected on this same development set, and relevance labels identify source files rather than exact supporting passages. The report at `reports/retrieval-ablation.json` includes per-query retrieved sources and the model revision. It is a development comparison, not an independent test score.
+
+Run the focused tests with:
+
+```powershell
+$env:PYTHONPATH = "src"
+python -m pip install -r requirements-dev.txt
+python -m pytest -q
+```
+
+```bash
+python -m pip install -r requirements-dev.txt
+PYTHONPATH=src python -m pytest -q
+```
 
 ## API
 
@@ -70,6 +123,8 @@ docker run --rm -p 8000:8000 -v course-copilot-data:/app/data/runtime course-cop
 ```
 
 The embedding model downloads on the first indexing run. Override `COURSE_READ_ONLY=false` only for a trusted local instance where you need to upload or delete documents.
+
+The repository includes a Render Blueprint at `render.yaml` for a read-only API and browser demo. Create the service from the repository's Blueprint in Render; its temporary demo data and model cache are rebuilt after an instance restart.
 
 ## Limitations
 

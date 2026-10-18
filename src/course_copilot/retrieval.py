@@ -5,7 +5,7 @@ from typing import Any
 import numpy as np
 
 from course_copilot.database import chunks, lexical_search
-from course_copilot.config import MIN_DENSE_SIMILARITY
+from course_copilot.config import BM25_RRF_WEIGHT, DENSE_RRF_WEIGHT, MIN_DENSE_SIMILARITY
 from course_copilot.embeddings import embed
 
 
@@ -25,10 +25,10 @@ def retrieve(question: str, top_k: int = 5) -> list[dict[str, Any]]:
     dense_scores: dict[int, float] = {}
     for rank, (item, score) in enumerate(dense, start=1):
         chunk_id = int(item["id"])
-        ranks[chunk_id] = ranks.get(chunk_id, 0.0) + 1 / (60 + rank)
+        ranks[chunk_id] = ranks.get(chunk_id, 0.0) + DENSE_RRF_WEIGHT / (60 + rank)
         dense_scores[chunk_id] = score
     for rank, chunk_id in enumerate(lexical_ids, start=1):
-        ranks[chunk_id] = ranks.get(chunk_id, 0.0) + 1 / (60 + rank)
+        ranks[chunk_id] = ranks.get(chunk_id, 0.0) + BM25_RRF_WEIGHT / (60 + rank)
     by_id = {int(item["id"]): item for item in items}
     ordered_ids = sorted(ranks, key=lambda chunk_id: ranks[chunk_id], reverse=True)
     return [

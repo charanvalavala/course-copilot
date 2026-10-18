@@ -1,0 +1,4753 @@
+{
+  "corpus_documents": 13,
+  "corpus_chunks": 13,
+  "queries": 67,
+  "answerable_queries": 52,
+  "unanswerable_queries": 15,
+  "top_k": 5,
+  "minimum_dense_similarity": 0.45,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "metrics": {
+    "BM25 only": {
+      "queries": 67,
+      "answerable_queries": 52,
+      "unanswerable_queries": 15,
+      "hit_rate_at_k": 1.0,
+      "hit_rate_at_1": 0.9038461538461539,
+      "mean_reciprocal_rank": 0.9455128205128205,
+      "unanswerable_abstention_accuracy": 0.9333333333333333,
+      "top_k": 5,
+      "details": [
+        {
+          "question": "Who decides which courses run in a semester and where are actual offerings listed?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-offerings.md",
+            "elective-planning.md",
+            "official-academic-documents.md",
+            "course-withdrawal.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "If a subject is in the bulletin, is it guaranteed to be taught this term?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "When can students see the list of courses offered this semester?",
+          "hit": true,
+          "reciprocal_rank": 0.3333333333333333,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "semester-two-start.md",
+            "course-offerings.md",
+            "elective-planning.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "Do facilities and programme progression affect course availability?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-offerings.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "Can I choose an elective just because it appears in the bulletin?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "What should I check before planning to take an elective?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "Are previous timetables a guarantee that a course will run again?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md",
+            "course-offerings.md",
+            "official-academic-documents.md"
+          ]
+        },
+        {
+          "question": "Which list controls elective choices for the current semester?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md",
+            "course-withdrawal.md",
+            "official-academic-documents.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "Does registration in a course require prior permission?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "registration-permission.md"
+          ]
+        },
+        {
+          "question": "Where do I find the binding rules about enrolling in a course?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "registration-permission.md"
+          ]
+        },
+        {
+          "question": "Can this summary replace the full academic regulations?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "registration-permission.md",
+            "official-academic-documents.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "What does the bulletin say about permission to register?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "registration-permission.md",
+            "regular-semesters.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "How should I handle a course with a prerequisite?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "Does a missing restriction mean I can rearrange the semester sequence?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "Where are course prerequisites and semester order explained?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md",
+            "elective-planning.md",
+            "course-offerings.md",
+            "course-withdrawal.md",
+            "official-academic-documents.md"
+          ]
+        },
+        {
+          "question": "Can prerequisite conditions be waived?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "How many regular semesters are in the academic calendar?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "Is the summer term automatically a regular semester?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "summer-term-and-practice-school.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "When does the summer term fit into the calendar according to the bulletin?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "summer-term-and-practice-school.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Are there programme-specific exceptions for the summer term?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "summer-term-and-practice-school.md",
+            "course-offerings.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "When was Semester II registration scheduled in the 2025-26 calendar?",
+          "hit": true,
+          "reciprocal_rank": 0.3333333333333333,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md",
+            "registration-permission.md",
+            "semester-two-start.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "When did Semester II classwork start in January 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "semester-two-start.md",
+            "midsemester-exams.md",
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "What date was listed for second semester student registration?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "semester-two-start.md",
+            "comprehensive-exams.md",
+            "course-withdrawal.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "Where can I confirm campus and programme variations to the semester start?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "semester-two-start.md",
+            "summer-term-and-practice-school.md",
+            "hyderabad-campus-holiday.md",
+            "midsemester-exams.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "When were the Semester II mid-semester exams in 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "midsemester-exams.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "Was classwork suspended during the midsemester examination period?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "midsemester-exams.md",
+            "comprehensive-exams.md"
+          ]
+        },
+        {
+          "question": "Which dates did the academic calendar give for mid-semester examinations?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "midsemester-exams.md",
+            "comprehensive-exams.md",
+            "course-withdrawal.md",
+            "semester-two-start.md",
+            "summer-term-and-practice-school.md"
+          ]
+        },
+        {
+          "question": "For how long were mid-semester exams scheduled in March 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "midsemester-exams.md",
+            "hyderabad-campus-holiday.md",
+            "course-withdrawal.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "What was the final date to withdraw from a course in Semester II 2025-26?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "summer-term-and-practice-school.md"
+          ]
+        },
+        {
+          "question": "When did course withdrawal close according to the 2025-26 calendar?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "course-offerings.md",
+            "registration-permission.md",
+            "elective-planning.md",
+            "official-academic-documents.md"
+          ]
+        },
+        {
+          "question": "Where can I verify the course withdrawal deadline for this academic year?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "course-offerings.md",
+            "registration-permission.md",
+            "elective-planning.md",
+            "official-academic-documents.md"
+          ]
+        },
+        {
+          "question": "Is March 20 a withdrawal deadline for every academic year?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "midsemester-exams.md",
+            "hyderabad-campus-holiday.md"
+          ]
+        },
+        {
+          "question": "When did the 2025-26 Semester II comprehensive exams begin and end?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "summer-term-and-practice-school.md",
+            "semester-two-start.md",
+            "course-offerings.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "What was the semester end date after comprehensive examinations?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "summer-term-and-practice-school.md",
+            "course-withdrawal.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "When was the comprehensive exam period in May 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "summer-term-and-practice-school.md"
+          ]
+        },
+        {
+          "question": "How can I check whether the comprehensive exam dates still apply?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "When did the summer term and summer vacation begin in 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "What date did Practice School I begin in 2025-26?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "When did Practice School II end in June 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md"
+          ]
+        },
+        {
+          "question": "What was the listed end date for Practice School I?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "What holiday is listed for the Hyderabad campus on March 19, 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "Does the Ugadi holiday entry apply to Hyderabad campus?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md"
+          ]
+        },
+        {
+          "question": "Where can I verify campus-specific holiday schedules?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "Could holiday dates differ by campus or programme?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "summer-term-and-practice-school.md"
+          ]
+        },
+        {
+          "question": "Where are Academic Regulations and the term timetable linked?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "course-offerings.md",
+            "registration-permission.md",
+            "elective-planning.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "What documents are on the Institute Important Documents page?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md"
+          ]
+        },
+        {
+          "question": "Which document should I check for courses actually running this term?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-offerings.md",
+            "official-academic-documents.md",
+            "regular-semesters.md",
+            "course-withdrawal.md",
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "Does the important documents page list earlier bulletins too?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Which division handles first-degree undergraduate academic matters?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md"
+          ]
+        },
+        {
+          "question": "Who handles academic matters for higher-degree and PhD programmes?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md",
+            "regular-semesters.md",
+            "hyderabad-campus-holiday.md",
+            "midsemester-exams.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "Is AUGS Division for undergraduate programmes?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md"
+          ]
+        },
+        {
+          "question": "Where should a student check the current contact route for academic services?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md",
+            "semester-two-start.md",
+            "course-withdrawal.md",
+            "elective-planning.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "What does the cafeteria serve for dinner tonight?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the password for campus Wi-Fi?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Can you tell me my current CGPA?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Which classroom is my lecture in tomorrow?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "How many seats are available in this elective now?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "What is the hostel mess fee?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the attendance policy for data structures?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Show my transcript and semester grades.",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Am I eligible for a scholarship based on my personal marks?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "When is my assignment due?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What bus route should I take to campus?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Who won the inter-campus football tournament?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the campus security phone number?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the current hostel allocation status for my room?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What are the dining hall hours this week?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        }
+      ],
+      "scope": "File-level retrieval relevance only; does not score answer correctness or citation faithfulness."
+    },
+    "Dense only": {
+      "queries": 67,
+      "answerable_queries": 52,
+      "unanswerable_queries": 15,
+      "hit_rate_at_k": 0.9038461538461539,
+      "hit_rate_at_1": 0.7115384615384616,
+      "mean_reciprocal_rank": 0.8076923076923077,
+      "unanswerable_abstention_accuracy": 1.0,
+      "top_k": 5,
+      "details": [
+        {
+          "question": "Who decides which courses run in a semester and where are actual offerings listed?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-offerings.md",
+            "prerequisites-and-sequences.md",
+            "comprehensive-exams.md",
+            "regular-semesters.md",
+            "official-academic-documents.md"
+          ]
+        },
+        {
+          "question": "If a subject is in the bulletin, is it guaranteed to be taught this term?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": false,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "When can students see the list of courses offered this semester?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "course-offerings.md",
+            "midsemester-exams.md",
+            "prerequisites-and-sequences.md",
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "Do facilities and programme progression affect course availability?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Can I choose an elective just because it appears in the bulletin?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "What should I check before planning to take an elective?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "Are previous timetables a guarantee that a course will run again?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md",
+            "comprehensive-exams.md",
+            "prerequisites-and-sequences.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Which list controls elective choices for the current semester?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "Does registration in a course require prior permission?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "registration-permission.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "Where do I find the binding rules about enrolling in a course?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "registration-permission.md",
+            "official-academic-documents.md",
+            "prerequisites-and-sequences.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Can this summary replace the full academic regulations?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "registration-permission.md"
+          ]
+        },
+        {
+          "question": "What does the bulletin say about permission to register?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "registration-permission.md"
+          ]
+        },
+        {
+          "question": "How should I handle a course with a prerequisite?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "Does a missing restriction mean I can rearrange the semester sequence?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md",
+            "regular-semesters.md",
+            "comprehensive-exams.md",
+            "elective-planning.md",
+            "registration-permission.md"
+          ]
+        },
+        {
+          "question": "Where are course prerequisites and semester order explained?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md",
+            "official-academic-documents.md",
+            "course-offerings.md",
+            "comprehensive-exams.md",
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "Can prerequisite conditions be waived?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md",
+            "registration-permission.md"
+          ]
+        },
+        {
+          "question": "How many regular semesters are in the academic calendar?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "Is the summer term automatically a regular semester?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "prerequisites-and-sequences.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "When does the summer term fit into the calendar according to the bulletin?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "summer-term-and-practice-school.md"
+          ]
+        },
+        {
+          "question": "Are there programme-specific exceptions for the summer term?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "summer-term-and-practice-school.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "When was Semester II registration scheduled in the 2025-26 calendar?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "midsemester-exams.md",
+            "regular-semesters.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "When did Semester II classwork start in January 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "semester-two-start.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "regular-semesters.md",
+            "summer-term-and-practice-school.md"
+          ]
+        },
+        {
+          "question": "What date was listed for second semester student registration?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "semester-two-start.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "Where can I confirm campus and programme variations to the semester start?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "regular-semesters.md",
+            "prerequisites-and-sequences.md",
+            "official-academic-documents.md"
+          ]
+        },
+        {
+          "question": "When were the Semester II mid-semester exams in 2026?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "regular-semesters.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "Was classwork suspended during the midsemester examination period?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "Which dates did the academic calendar give for mid-semester examinations?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "regular-semesters.md",
+            "semester-two-start.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "For how long were mid-semester exams scheduled in March 2026?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "What was the final date to withdraw from a course in Semester II 2025-26?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "When did course withdrawal close according to the 2025-26 calendar?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "summer-term-and-practice-school.md"
+          ]
+        },
+        {
+          "question": "Where can I verify the course withdrawal deadline for this academic year?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "comprehensive-exams.md",
+            "official-academic-documents.md",
+            "midsemester-exams.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "Is March 20 a withdrawal deadline for every academic year?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "comprehensive-exams.md",
+            "summer-term-and-practice-school.md",
+            "regular-semesters.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "When did the 2025-26 Semester II comprehensive exams begin and end?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md",
+            "official-academic-documents.md"
+          ]
+        },
+        {
+          "question": "What was the semester end date after comprehensive examinations?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md",
+            "semester-two-start.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "When was the comprehensive exam period in May 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md",
+            "semester-two-start.md",
+            "official-academic-documents.md"
+          ]
+        },
+        {
+          "question": "How can I check whether the comprehensive exam dates still apply?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "When did the summer term and summer vacation begin in 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "What date did Practice School I begin in 2025-26?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "course-withdrawal.md",
+            "midsemester-exams.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "When did Practice School II end in June 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "What was the listed end date for Practice School I?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "course-withdrawal.md",
+            "midsemester-exams.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "What holiday is listed for the Hyderabad campus on March 19, 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md"
+          ]
+        },
+        {
+          "question": "Does the Ugadi holiday entry apply to Hyderabad campus?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md"
+          ]
+        },
+        {
+          "question": "Where can I verify campus-specific holiday schedules?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md"
+          ]
+        },
+        {
+          "question": "Could holiday dates differ by campus or programme?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "hyderabad-campus-holiday.md",
+            "comprehensive-exams.md"
+          ]
+        },
+        {
+          "question": "Where are Academic Regulations and the term timetable linked?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "regular-semesters.md",
+            "comprehensive-exams.md",
+            "prerequisites-and-sequences.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "What documents are on the Institute Important Documents page?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md"
+          ]
+        },
+        {
+          "question": "Which document should I check for courses actually running this term?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md",
+            "official-academic-documents.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Does the important documents page list earlier bulletins too?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": false,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Which division handles first-degree undergraduate academic matters?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md"
+          ]
+        },
+        {
+          "question": "Who handles academic matters for higher-degree and PhD programmes?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": false,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Is AUGS Division for undergraduate programmes?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Where should a student check the current contact route for academic services?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": false,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What does the cafeteria serve for dinner tonight?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the password for campus Wi-Fi?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Can you tell me my current CGPA?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Which classroom is my lecture in tomorrow?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "How many seats are available in this elective now?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the hostel mess fee?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the attendance policy for data structures?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Show my transcript and semester grades.",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Am I eligible for a scholarship based on my personal marks?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "When is my assignment due?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What bus route should I take to campus?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Who won the inter-campus football tournament?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the campus security phone number?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the current hostel allocation status for my room?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What are the dining hall hours this week?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        }
+      ],
+      "scope": "File-level retrieval relevance only; does not score answer correctness or citation faithfulness."
+    },
+    "Equal-weight RRF": {
+      "queries": 67,
+      "answerable_queries": 52,
+      "unanswerable_queries": 15,
+      "hit_rate_at_k": 1.0,
+      "hit_rate_at_1": 0.8461538461538461,
+      "mean_reciprocal_rank": 0.9230769230769231,
+      "unanswerable_abstention_accuracy": 0.9333333333333333,
+      "top_k": 5,
+      "details": [
+        {
+          "question": "Who decides which courses run in a semester and where are actual offerings listed?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-offerings.md",
+            "elective-planning.md",
+            "official-academic-documents.md",
+            "semester-two-start.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "If a subject is in the bulletin, is it guaranteed to be taught this term?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "When can students see the list of courses offered this semester?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-offerings.md",
+            "comprehensive-exams.md",
+            "official-academic-documents.md",
+            "semester-two-start.md",
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "Do facilities and programme progression affect course availability?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Can I choose an elective just because it appears in the bulletin?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "What should I check before planning to take an elective?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "Are previous timetables a guarantee that a course will run again?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md",
+            "course-offerings.md",
+            "comprehensive-exams.md",
+            "prerequisites-and-sequences.md",
+            "official-academic-documents.md"
+          ]
+        },
+        {
+          "question": "Which list controls elective choices for the current semester?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md",
+            "course-withdrawal.md",
+            "official-academic-documents.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "Does registration in a course require prior permission?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "registration-permission.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "Where do I find the binding rules about enrolling in a course?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "registration-permission.md",
+            "official-academic-documents.md",
+            "prerequisites-and-sequences.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Can this summary replace the full academic regulations?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "registration-permission.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "What does the bulletin say about permission to register?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "registration-permission.md",
+            "regular-semesters.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "How should I handle a course with a prerequisite?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "Does a missing restriction mean I can rearrange the semester sequence?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md",
+            "regular-semesters.md",
+            "comprehensive-exams.md",
+            "elective-planning.md",
+            "registration-permission.md"
+          ]
+        },
+        {
+          "question": "Where are course prerequisites and semester order explained?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md",
+            "course-offerings.md",
+            "official-academic-documents.md",
+            "elective-planning.md",
+            "comprehensive-exams.md"
+          ]
+        },
+        {
+          "question": "Can prerequisite conditions be waived?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md",
+            "registration-permission.md"
+          ]
+        },
+        {
+          "question": "How many regular semesters are in the academic calendar?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "Is the summer term automatically a regular semester?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "course-offerings.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "When does the summer term fit into the calendar according to the bulletin?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "summer-term-and-practice-school.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Are there programme-specific exceptions for the summer term?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "summer-term-and-practice-school.md",
+            "prerequisites-and-sequences.md",
+            "course-offerings.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "When was Semester II registration scheduled in the 2025-26 calendar?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "hyderabad-campus-holiday.md",
+            "midsemester-exams.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "When did Semester II classwork start in January 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "semester-two-start.md",
+            "midsemester-exams.md",
+            "comprehensive-exams.md",
+            "summer-term-and-practice-school.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "What date was listed for second semester student registration?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "semester-two-start.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "Where can I confirm campus and programme variations to the semester start?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "semester-two-start.md",
+            "regular-semesters.md",
+            "midsemester-exams.md",
+            "course-offerings.md",
+            "comprehensive-exams.md"
+          ]
+        },
+        {
+          "question": "When were the Semester II mid-semester exams in 2026?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "Was classwork suspended during the midsemester examination period?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "midsemester-exams.md",
+            "comprehensive-exams.md"
+          ]
+        },
+        {
+          "question": "Which dates did the academic calendar give for mid-semester examinations?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md",
+            "semester-two-start.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "For how long were mid-semester exams scheduled in March 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "midsemester-exams.md",
+            "comprehensive-exams.md",
+            "course-withdrawal.md",
+            "semester-two-start.md",
+            "hyderabad-campus-holiday.md"
+          ]
+        },
+        {
+          "question": "What was the final date to withdraw from a course in Semester II 2025-26?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "When did course withdrawal close according to the 2025-26 calendar?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "midsemester-exams.md",
+            "hyderabad-campus-holiday.md"
+          ]
+        },
+        {
+          "question": "Where can I verify the course withdrawal deadline for this academic year?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "official-academic-documents.md",
+            "comprehensive-exams.md",
+            "course-offerings.md",
+            "registration-permission.md"
+          ]
+        },
+        {
+          "question": "Is March 20 a withdrawal deadline for every academic year?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "midsemester-exams.md",
+            "comprehensive-exams.md",
+            "summer-term-and-practice-school.md",
+            "hyderabad-campus-holiday.md"
+          ]
+        },
+        {
+          "question": "When did the 2025-26 Semester II comprehensive exams begin and end?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "midsemester-exams.md",
+            "summer-term-and-practice-school.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "What was the semester end date after comprehensive examinations?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md",
+            "semester-two-start.md",
+            "summer-term-and-practice-school.md"
+          ]
+        },
+        {
+          "question": "When was the comprehensive exam period in May 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md",
+            "summer-term-and-practice-school.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "How can I check whether the comprehensive exam dates still apply?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "course-withdrawal.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "When did the summer term and summer vacation begin in 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "What date did Practice School I begin in 2025-26?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "course-withdrawal.md",
+            "semester-two-start.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "When did Practice School II end in June 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "What was the listed end date for Practice School I?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "What holiday is listed for the Hyderabad campus on March 19, 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "Does the Ugadi holiday entry apply to Hyderabad campus?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md"
+          ]
+        },
+        {
+          "question": "Where can I verify campus-specific holiday schedules?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "hyderabad-campus-holiday.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "Could holiday dates differ by campus or programme?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md",
+            "regular-semesters.md",
+            "midsemester-exams.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "Where are Academic Regulations and the term timetable linked?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "regular-semesters.md",
+            "registration-permission.md",
+            "elective-planning.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "What documents are on the Institute Important Documents page?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md"
+          ]
+        },
+        {
+          "question": "Which document should I check for courses actually running this term?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-offerings.md",
+            "official-academic-documents.md",
+            "prerequisites-and-sequences.md",
+            "regular-semesters.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "Does the important documents page list earlier bulletins too?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Which division handles first-degree undergraduate academic matters?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md"
+          ]
+        },
+        {
+          "question": "Who handles academic matters for higher-degree and PhD programmes?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md",
+            "regular-semesters.md",
+            "hyderabad-campus-holiday.md",
+            "midsemester-exams.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "Is AUGS Division for undergraduate programmes?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Where should a student check the current contact route for academic services?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md",
+            "semester-two-start.md",
+            "course-withdrawal.md",
+            "elective-planning.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "What does the cafeteria serve for dinner tonight?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the password for campus Wi-Fi?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Can you tell me my current CGPA?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Which classroom is my lecture in tomorrow?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "How many seats are available in this elective now?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "What is the hostel mess fee?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the attendance policy for data structures?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Show my transcript and semester grades.",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Am I eligible for a scholarship based on my personal marks?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "When is my assignment due?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What bus route should I take to campus?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Who won the inter-campus football tournament?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the campus security phone number?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the current hostel allocation status for my room?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What are the dining hall hours this week?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        }
+      ],
+      "scope": "File-level retrieval relevance only; does not score answer correctness or citation faithfulness."
+    },
+    "Selected weighted RRF 2:1 BM25:dense": {
+      "queries": 67,
+      "answerable_queries": 52,
+      "unanswerable_queries": 15,
+      "hit_rate_at_k": 1.0,
+      "hit_rate_at_1": 0.9230769230769231,
+      "mean_reciprocal_rank": 0.9615384615384616,
+      "unanswerable_abstention_accuracy": 0.9333333333333333,
+      "top_k": 5,
+      "details": [
+        {
+          "question": "Who decides which courses run in a semester and where are actual offerings listed?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-offerings.md",
+            "elective-planning.md",
+            "official-academic-documents.md",
+            "semester-two-start.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "If a subject is in the bulletin, is it guaranteed to be taught this term?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "When can students see the list of courses offered this semester?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "course-offerings.md",
+            "semester-two-start.md",
+            "comprehensive-exams.md",
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "Do facilities and programme progression affect course availability?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-offerings.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "Can I choose an elective just because it appears in the bulletin?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "What should I check before planning to take an elective?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "Are previous timetables a guarantee that a course will run again?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md",
+            "course-offerings.md",
+            "official-academic-documents.md",
+            "comprehensive-exams.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "Which list controls elective choices for the current semester?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md",
+            "course-withdrawal.md",
+            "official-academic-documents.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "Does registration in a course require prior permission?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "registration-permission.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "Where do I find the binding rules about enrolling in a course?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "registration-permission.md",
+            "prerequisites-and-sequences.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Can this summary replace the full academic regulations?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "registration-permission.md",
+            "official-academic-documents.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "What does the bulletin say about permission to register?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "registration-permission.md",
+            "regular-semesters.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "How should I handle a course with a prerequisite?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "Does a missing restriction mean I can rearrange the semester sequence?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md",
+            "regular-semesters.md",
+            "comprehensive-exams.md",
+            "elective-planning.md",
+            "registration-permission.md"
+          ]
+        },
+        {
+          "question": "Where are course prerequisites and semester order explained?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md",
+            "elective-planning.md",
+            "course-offerings.md",
+            "official-academic-documents.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "Can prerequisite conditions be waived?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md",
+            "registration-permission.md"
+          ]
+        },
+        {
+          "question": "How many regular semesters are in the academic calendar?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "Is the summer term automatically a regular semester?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "summer-term-and-practice-school.md",
+            "course-offerings.md",
+            "comprehensive-exams.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "When does the summer term fit into the calendar according to the bulletin?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "summer-term-and-practice-school.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Are there programme-specific exceptions for the summer term?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "summer-term-and-practice-school.md",
+            "course-offerings.md",
+            "semester-two-start.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "When was Semester II registration scheduled in the 2025-26 calendar?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "semester-two-start.md",
+            "hyderabad-campus-holiday.md",
+            "comprehensive-exams.md",
+            "registration-permission.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "When did Semester II classwork start in January 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "semester-two-start.md",
+            "midsemester-exams.md",
+            "comprehensive-exams.md",
+            "summer-term-and-practice-school.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "What date was listed for second semester student registration?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "semester-two-start.md",
+            "comprehensive-exams.md",
+            "course-withdrawal.md",
+            "midsemester-exams.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "Where can I confirm campus and programme variations to the semester start?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "semester-two-start.md",
+            "midsemester-exams.md",
+            "regular-semesters.md",
+            "course-offerings.md",
+            "summer-term-and-practice-school.md"
+          ]
+        },
+        {
+          "question": "When were the Semester II mid-semester exams in 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "midsemester-exams.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "Was classwork suspended during the midsemester examination period?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "midsemester-exams.md",
+            "comprehensive-exams.md"
+          ]
+        },
+        {
+          "question": "Which dates did the academic calendar give for mid-semester examinations?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "midsemester-exams.md",
+            "comprehensive-exams.md",
+            "course-withdrawal.md",
+            "semester-two-start.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "For how long were mid-semester exams scheduled in March 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "midsemester-exams.md",
+            "comprehensive-exams.md",
+            "course-withdrawal.md",
+            "hyderabad-campus-holiday.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "What was the final date to withdraw from a course in Semester II 2025-26?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "When did course withdrawal close according to the 2025-26 calendar?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "hyderabad-campus-holiday.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "Where can I verify the course withdrawal deadline for this academic year?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "official-academic-documents.md",
+            "course-offerings.md",
+            "registration-permission.md",
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "Is March 20 a withdrawal deadline for every academic year?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "midsemester-exams.md",
+            "hyderabad-campus-holiday.md",
+            "comprehensive-exams.md",
+            "summer-term-and-practice-school.md"
+          ]
+        },
+        {
+          "question": "When did the 2025-26 Semester II comprehensive exams begin and end?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "summer-term-and-practice-school.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "What was the semester end date after comprehensive examinations?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md",
+            "semester-two-start.md",
+            "summer-term-and-practice-school.md"
+          ]
+        },
+        {
+          "question": "When was the comprehensive exam period in May 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "summer-term-and-practice-school.md",
+            "course-withdrawal.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "How can I check whether the comprehensive exam dates still apply?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "course-withdrawal.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "When did the summer term and summer vacation begin in 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "What date did Practice School I begin in 2025-26?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "When did Practice School II end in June 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "What was the listed end date for Practice School I?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "What holiday is listed for the Hyderabad campus on March 19, 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "Does the Ugadi holiday entry apply to Hyderabad campus?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md"
+          ]
+        },
+        {
+          "question": "Where can I verify campus-specific holiday schedules?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md",
+            "semester-two-start.md",
+            "official-academic-documents.md"
+          ]
+        },
+        {
+          "question": "Could holiday dates differ by campus or programme?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "summer-term-and-practice-school.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "Where are Academic Regulations and the term timetable linked?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "regular-semesters.md",
+            "registration-permission.md",
+            "elective-planning.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "What documents are on the Institute Important Documents page?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md"
+          ]
+        },
+        {
+          "question": "Which document should I check for courses actually running this term?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-offerings.md",
+            "official-academic-documents.md",
+            "regular-semesters.md",
+            "course-withdrawal.md",
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "Does the important documents page list earlier bulletins too?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Which division handles first-degree undergraduate academic matters?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md"
+          ]
+        },
+        {
+          "question": "Who handles academic matters for higher-degree and PhD programmes?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md",
+            "regular-semesters.md",
+            "hyderabad-campus-holiday.md",
+            "midsemester-exams.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "Is AUGS Division for undergraduate programmes?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Where should a student check the current contact route for academic services?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md",
+            "semester-two-start.md",
+            "course-withdrawal.md",
+            "elective-planning.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "What does the cafeteria serve for dinner tonight?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the password for campus Wi-Fi?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Can you tell me my current CGPA?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Which classroom is my lecture in tomorrow?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "How many seats are available in this elective now?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "What is the hostel mess fee?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the attendance policy for data structures?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Show my transcript and semester grades.",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Am I eligible for a scholarship based on my personal marks?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "When is my assignment due?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What bus route should I take to campus?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Who won the inter-campus football tournament?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the campus security phone number?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the current hostel allocation status for my room?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What are the dining hall hours this week?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        }
+      ],
+      "scope": "File-level retrieval relevance only; does not score answer correctness or citation faithfulness."
+    },
+    "Weighted RRF 2:1 with dense gate": {
+      "queries": 67,
+      "answerable_queries": 52,
+      "unanswerable_queries": 15,
+      "hit_rate_at_k": 0.9230769230769231,
+      "hit_rate_at_1": 0.8653846153846154,
+      "mean_reciprocal_rank": 0.8942307692307693,
+      "unanswerable_abstention_accuracy": 1.0,
+      "top_k": 5,
+      "details": [
+        {
+          "question": "Who decides which courses run in a semester and where are actual offerings listed?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-offerings.md",
+            "elective-planning.md",
+            "official-academic-documents.md",
+            "semester-two-start.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "If a subject is in the bulletin, is it guaranteed to be taught this term?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": false,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "When can students see the list of courses offered this semester?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "course-offerings.md",
+            "semester-two-start.md",
+            "comprehensive-exams.md",
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "Do facilities and programme progression affect course availability?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-offerings.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "Can I choose an elective just because it appears in the bulletin?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "What should I check before planning to take an elective?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "Are previous timetables a guarantee that a course will run again?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md",
+            "course-offerings.md",
+            "official-academic-documents.md",
+            "comprehensive-exams.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "Which list controls elective choices for the current semester?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md",
+            "course-withdrawal.md",
+            "official-academic-documents.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "Does registration in a course require prior permission?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "registration-permission.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "Where do I find the binding rules about enrolling in a course?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "registration-permission.md",
+            "prerequisites-and-sequences.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Can this summary replace the full academic regulations?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "registration-permission.md",
+            "official-academic-documents.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "What does the bulletin say about permission to register?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "registration-permission.md",
+            "regular-semesters.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "How should I handle a course with a prerequisite?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "Does a missing restriction mean I can rearrange the semester sequence?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md",
+            "regular-semesters.md",
+            "comprehensive-exams.md",
+            "elective-planning.md",
+            "registration-permission.md"
+          ]
+        },
+        {
+          "question": "Where are course prerequisites and semester order explained?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md",
+            "elective-planning.md",
+            "course-offerings.md",
+            "official-academic-documents.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "Can prerequisite conditions be waived?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md",
+            "registration-permission.md"
+          ]
+        },
+        {
+          "question": "How many regular semesters are in the academic calendar?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "Is the summer term automatically a regular semester?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "summer-term-and-practice-school.md",
+            "course-offerings.md",
+            "comprehensive-exams.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "When does the summer term fit into the calendar according to the bulletin?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "summer-term-and-practice-school.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Are there programme-specific exceptions for the summer term?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "summer-term-and-practice-school.md",
+            "course-offerings.md",
+            "semester-two-start.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "When was Semester II registration scheduled in the 2025-26 calendar?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "semester-two-start.md",
+            "hyderabad-campus-holiday.md",
+            "comprehensive-exams.md",
+            "registration-permission.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "When did Semester II classwork start in January 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "semester-two-start.md",
+            "midsemester-exams.md",
+            "comprehensive-exams.md",
+            "summer-term-and-practice-school.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "What date was listed for second semester student registration?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "semester-two-start.md",
+            "comprehensive-exams.md",
+            "course-withdrawal.md",
+            "midsemester-exams.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "Where can I confirm campus and programme variations to the semester start?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "semester-two-start.md",
+            "midsemester-exams.md",
+            "regular-semesters.md",
+            "course-offerings.md",
+            "summer-term-and-practice-school.md"
+          ]
+        },
+        {
+          "question": "When were the Semester II mid-semester exams in 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "midsemester-exams.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "Was classwork suspended during the midsemester examination period?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "midsemester-exams.md",
+            "comprehensive-exams.md"
+          ]
+        },
+        {
+          "question": "Which dates did the academic calendar give for mid-semester examinations?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "midsemester-exams.md",
+            "comprehensive-exams.md",
+            "course-withdrawal.md",
+            "semester-two-start.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "For how long were mid-semester exams scheduled in March 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "midsemester-exams.md",
+            "comprehensive-exams.md",
+            "course-withdrawal.md",
+            "hyderabad-campus-holiday.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "What was the final date to withdraw from a course in Semester II 2025-26?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "When did course withdrawal close according to the 2025-26 calendar?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "hyderabad-campus-holiday.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "Where can I verify the course withdrawal deadline for this academic year?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "official-academic-documents.md",
+            "course-offerings.md",
+            "registration-permission.md",
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "Is March 20 a withdrawal deadline for every academic year?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "midsemester-exams.md",
+            "hyderabad-campus-holiday.md",
+            "comprehensive-exams.md",
+            "summer-term-and-practice-school.md"
+          ]
+        },
+        {
+          "question": "When did the 2025-26 Semester II comprehensive exams begin and end?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "summer-term-and-practice-school.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "What was the semester end date after comprehensive examinations?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md",
+            "semester-two-start.md",
+            "summer-term-and-practice-school.md"
+          ]
+        },
+        {
+          "question": "When was the comprehensive exam period in May 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "summer-term-and-practice-school.md",
+            "course-withdrawal.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "How can I check whether the comprehensive exam dates still apply?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "course-withdrawal.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "When did the summer term and summer vacation begin in 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "What date did Practice School I begin in 2025-26?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "When did Practice School II end in June 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "What was the listed end date for Practice School I?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "What holiday is listed for the Hyderabad campus on March 19, 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "Does the Ugadi holiday entry apply to Hyderabad campus?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md"
+          ]
+        },
+        {
+          "question": "Where can I verify campus-specific holiday schedules?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md",
+            "semester-two-start.md",
+            "official-academic-documents.md"
+          ]
+        },
+        {
+          "question": "Could holiday dates differ by campus or programme?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "summer-term-and-practice-school.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "Where are Academic Regulations and the term timetable linked?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "regular-semesters.md",
+            "registration-permission.md",
+            "elective-planning.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "What documents are on the Institute Important Documents page?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md"
+          ]
+        },
+        {
+          "question": "Which document should I check for courses actually running this term?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-offerings.md",
+            "official-academic-documents.md",
+            "regular-semesters.md",
+            "course-withdrawal.md",
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "Does the important documents page list earlier bulletins too?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": false,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Which division handles first-degree undergraduate academic matters?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md"
+          ]
+        },
+        {
+          "question": "Who handles academic matters for higher-degree and PhD programmes?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": false,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Is AUGS Division for undergraduate programmes?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Where should a student check the current contact route for academic services?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": false,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What does the cafeteria serve for dinner tonight?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the password for campus Wi-Fi?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Can you tell me my current CGPA?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Which classroom is my lecture in tomorrow?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "How many seats are available in this elective now?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the hostel mess fee?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the attendance policy for data structures?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Show my transcript and semester grades.",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Am I eligible for a scholarship based on my personal marks?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "When is my assignment due?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What bus route should I take to campus?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Who won the inter-campus football tournament?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the campus security phone number?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the current hostel allocation status for my room?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What are the dining hall hours this week?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        }
+      ],
+      "scope": "File-level retrieval relevance only; does not score answer correctness or citation faithfulness."
+    },
+    "Weighted RRF 3:1 BM25:dense": {
+      "queries": 67,
+      "answerable_queries": 52,
+      "unanswerable_queries": 15,
+      "hit_rate_at_k": 1.0,
+      "hit_rate_at_1": 0.9038461538461539,
+      "mean_reciprocal_rank": 0.9519230769230769,
+      "unanswerable_abstention_accuracy": 0.9333333333333333,
+      "top_k": 5,
+      "details": [
+        {
+          "question": "Who decides which courses run in a semester and where are actual offerings listed?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-offerings.md",
+            "elective-planning.md",
+            "official-academic-documents.md",
+            "semester-two-start.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "If a subject is in the bulletin, is it guaranteed to be taught this term?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "When can students see the list of courses offered this semester?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "course-offerings.md",
+            "semester-two-start.md",
+            "elective-planning.md",
+            "comprehensive-exams.md"
+          ]
+        },
+        {
+          "question": "Do facilities and programme progression affect course availability?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-offerings.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "Can I choose an elective just because it appears in the bulletin?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "What should I check before planning to take an elective?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "Are previous timetables a guarantee that a course will run again?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md",
+            "course-offerings.md",
+            "official-academic-documents.md",
+            "comprehensive-exams.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "Which list controls elective choices for the current semester?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md",
+            "course-withdrawal.md",
+            "official-academic-documents.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "Does registration in a course require prior permission?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "registration-permission.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "Where do I find the binding rules about enrolling in a course?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "registration-permission.md",
+            "prerequisites-and-sequences.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Can this summary replace the full academic regulations?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "registration-permission.md",
+            "official-academic-documents.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "What does the bulletin say about permission to register?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "registration-permission.md",
+            "regular-semesters.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "How should I handle a course with a prerequisite?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "Does a missing restriction mean I can rearrange the semester sequence?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md",
+            "regular-semesters.md",
+            "comprehensive-exams.md",
+            "elective-planning.md",
+            "registration-permission.md"
+          ]
+        },
+        {
+          "question": "Where are course prerequisites and semester order explained?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md",
+            "elective-planning.md",
+            "course-offerings.md",
+            "official-academic-documents.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "Can prerequisite conditions be waived?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "prerequisites-and-sequences.md",
+            "registration-permission.md"
+          ]
+        },
+        {
+          "question": "How many regular semesters are in the academic calendar?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "Is the summer term automatically a regular semester?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "summer-term-and-practice-school.md",
+            "course-offerings.md",
+            "comprehensive-exams.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "When does the summer term fit into the calendar according to the bulletin?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "summer-term-and-practice-school.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Are there programme-specific exceptions for the summer term?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "regular-semesters.md",
+            "summer-term-and-practice-school.md",
+            "course-offerings.md",
+            "semester-two-start.md",
+            "prerequisites-and-sequences.md"
+          ]
+        },
+        {
+          "question": "When was Semester II registration scheduled in the 2025-26 calendar?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md",
+            "semester-two-start.md",
+            "comprehensive-exams.md",
+            "registration-permission.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "When did Semester II classwork start in January 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "semester-two-start.md",
+            "midsemester-exams.md",
+            "comprehensive-exams.md",
+            "summer-term-and-practice-school.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "What date was listed for second semester student registration?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "semester-two-start.md",
+            "comprehensive-exams.md",
+            "course-withdrawal.md",
+            "midsemester-exams.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "Where can I confirm campus and programme variations to the semester start?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "semester-two-start.md",
+            "midsemester-exams.md",
+            "regular-semesters.md",
+            "course-offerings.md",
+            "summer-term-and-practice-school.md"
+          ]
+        },
+        {
+          "question": "When were the Semester II mid-semester exams in 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "midsemester-exams.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "Was classwork suspended during the midsemester examination period?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "midsemester-exams.md",
+            "comprehensive-exams.md"
+          ]
+        },
+        {
+          "question": "Which dates did the academic calendar give for mid-semester examinations?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "midsemester-exams.md",
+            "comprehensive-exams.md",
+            "course-withdrawal.md",
+            "semester-two-start.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "For how long were mid-semester exams scheduled in March 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "midsemester-exams.md",
+            "comprehensive-exams.md",
+            "course-withdrawal.md",
+            "hyderabad-campus-holiday.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "What was the final date to withdraw from a course in Semester II 2025-26?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "When did course withdrawal close according to the 2025-26 calendar?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "semester-two-start.md",
+            "comprehensive-exams.md",
+            "hyderabad-campus-holiday.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "Where can I verify the course withdrawal deadline for this academic year?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "official-academic-documents.md",
+            "course-offerings.md",
+            "registration-permission.md",
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "Is March 20 a withdrawal deadline for every academic year?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-withdrawal.md",
+            "midsemester-exams.md",
+            "hyderabad-campus-holiday.md",
+            "comprehensive-exams.md",
+            "summer-term-and-practice-school.md"
+          ]
+        },
+        {
+          "question": "When did the 2025-26 Semester II comprehensive exams begin and end?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "summer-term-and-practice-school.md",
+            "midsemester-exams.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "What was the semester end date after comprehensive examinations?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md",
+            "semester-two-start.md",
+            "summer-term-and-practice-school.md"
+          ]
+        },
+        {
+          "question": "When was the comprehensive exam period in May 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "midsemester-exams.md",
+            "summer-term-and-practice-school.md",
+            "course-withdrawal.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "How can I check whether the comprehensive exam dates still apply?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "comprehensive-exams.md",
+            "course-withdrawal.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "When did the summer term and summer vacation begin in 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "What date did Practice School I begin in 2025-26?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "When did Practice School II end in June 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md"
+          ]
+        },
+        {
+          "question": "What was the listed end date for Practice School I?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "summer-term-and-practice-school.md",
+            "comprehensive-exams.md",
+            "semester-two-start.md",
+            "course-withdrawal.md",
+            "midsemester-exams.md"
+          ]
+        },
+        {
+          "question": "What holiday is listed for the Hyderabad campus on March 19, 2026?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md",
+            "midsemester-exams.md",
+            "course-withdrawal.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "Does the Ugadi holiday entry apply to Hyderabad campus?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md"
+          ]
+        },
+        {
+          "question": "Where can I verify campus-specific holiday schedules?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md",
+            "semester-two-start.md",
+            "official-academic-documents.md"
+          ]
+        },
+        {
+          "question": "Could holiday dates differ by campus or programme?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "hyderabad-campus-holiday.md",
+            "midsemester-exams.md",
+            "semester-two-start.md",
+            "summer-term-and-practice-school.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "Where are Academic Regulations and the term timetable linked?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "registration-permission.md",
+            "regular-semesters.md",
+            "elective-planning.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "What documents are on the Institute Important Documents page?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md"
+          ]
+        },
+        {
+          "question": "Which document should I check for courses actually running this term?",
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "course-offerings.md",
+            "official-academic-documents.md",
+            "regular-semesters.md",
+            "course-withdrawal.md",
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "Does the important documents page list earlier bulletins too?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "official-academic-documents.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Which division handles first-degree undergraduate academic matters?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md"
+          ]
+        },
+        {
+          "question": "Who handles academic matters for higher-degree and PhD programmes?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md",
+            "regular-semesters.md",
+            "hyderabad-campus-holiday.md",
+            "midsemester-exams.md",
+            "semester-two-start.md"
+          ]
+        },
+        {
+          "question": "Is AUGS Division for undergraduate programmes?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md",
+            "course-offerings.md"
+          ]
+        },
+        {
+          "question": "Where should a student check the current contact route for academic services?",
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "should_abstain": false,
+          "abstained": false,
+          "retrieved": [
+            "academic-divisions.md",
+            "semester-two-start.md",
+            "course-withdrawal.md",
+            "elective-planning.md",
+            "regular-semesters.md"
+          ]
+        },
+        {
+          "question": "What does the cafeteria serve for dinner tonight?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the password for campus Wi-Fi?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Can you tell me my current CGPA?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Which classroom is my lecture in tomorrow?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "How many seats are available in this elective now?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": false,
+          "retrieved": [
+            "elective-planning.md"
+          ]
+        },
+        {
+          "question": "What is the hostel mess fee?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the attendance policy for data structures?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Show my transcript and semester grades.",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Am I eligible for a scholarship based on my personal marks?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "When is my assignment due?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What bus route should I take to campus?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "Who won the inter-campus football tournament?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the campus security phone number?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What is the current hostel allocation status for my room?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        },
+        {
+          "question": "What are the dining hall hours this week?",
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "should_abstain": true,
+          "abstained": true,
+          "retrieved": []
+        }
+      ],
+      "scope": "File-level retrieval relevance only; does not score answer correctness or citation faithfulness."
+    }
+  },
+  "scope": "Source-file retrieval relevance and empty-result abstention on the bundled manually authored query set. Not answer correctness or citation faithfulness."
+}

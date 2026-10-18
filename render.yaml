@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: charan-course-copilot
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: COURSE_READ_ONLY
+        value: "true"
+      - key: COURSE_DATA_DIR
+        value: /tmp/course-copilot-data
+      - key: HF_HOME
+        value: /tmp/course-copilot-huggingface

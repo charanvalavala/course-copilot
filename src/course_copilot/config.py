@@ -18,4 +18,6 @@ MAX_UPLOAD_BYTES = 8 * 1024 * 1024
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 150
 MIN_DENSE_SIMILARITY = float(os.getenv("MIN_DENSE_SIMILARITY", "0.45"))
+BM25_RRF_WEIGHT = float(os.getenv("BM25_RRF_WEIGHT", "2.0"))
+DENSE_RRF_WEIGHT = float(os.getenv("DENSE_RRF_WEIGHT", "1.0"))
 READ_ONLY = os.getenv("COURSE_READ_ONLY", "false").lower() == "true"

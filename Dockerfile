@@ -9,4 +9,4 @@ ENV PYTHONPATH=/app/src
 ENV COURSE_DATA_DIR=/app/data/runtime
 ENV COURSE_READ_ONLY=true
 EXPOSE 8000
-CMD ["uvicorn", "course_copilot.api:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "-c", "exec uvicorn course_copilot.api:app --host 0.0.0.0 --port ${PORT:-8000}"]
