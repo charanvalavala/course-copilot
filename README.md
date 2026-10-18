@@ -1,5 +1,7 @@
 # Course Copilot
 
+**Live demo:** [Open Course Copilot](https://charan-course-copilot.onrender.com). Hosted on Render free tier; the service sleeps when idle, so the first visit may take about 50 seconds to wake.
+
 Course Copilot is an evaluation-first document assistant for course material. It combines semantic embeddings and SQLite FTS5 lexical search, merges rankings with reciprocal-rank fusion, returns inspectable evidence, and can generate cited answers with an optional local Ollama model.
 
 The BITS-specific demo is one use case, not an official BITS Pilani service. Use public or personally authorized documents only. The repository does not include private student records or copyrighted lecture notes.
