@@ -40,6 +40,12 @@ Each JSONL row has a question and one or more expected source filenames:
 {"question":"When does Semester II registration begin?","expected_sources":["semester-two-start.md"]}
 ```
 
+After starting the API, reproduce the bundled evaluation with:
+
+```powershell
+Invoke-RestMethod "http://127.0.0.1:8000/api/evaluate/demo?top_k=5" | ConvertTo-Json -Depth 6
+```
+
 The endpoint reports Hit@k and mean reciprocal rank. These do not measure answer correctness, whether a cited passage supports every generated claim, or student outcomes. The optional generation path rejects missing or out-of-range citation numbers, but does not independently score semantic faithfulness. Use a held-out, manually checked query set and report the number of queries, corpus version, pinned embedding model revision, and retrieval settings alongside any score.
 
 ## API
@@ -50,6 +56,7 @@ The endpoint reports Hit@k and mean reciprocal rank. These do not measure answer
 - `DELETE /api/documents/{document_id}`
 - `POST /api/query` with `{"question":"...","top_k":5}`
 - `POST /api/evaluate` with labeled JSON cases
+- `GET /api/evaluate/demo?top_k=5` with the included 67-query set
 
 ## Public deployment notes
 
