@@ -86,6 +86,8 @@ The current 13-note corpus results use `top_k=5` and the pinned MiniLM revision.
 
 The default uses the 2:1 weighting: it ranked the expected source first on 48 of 52 answerable queries, compared with 44 for equal-weight RRF. The dense gate removed the only false positive on the 15 out-of-scope prompts, but also lowered Hit@5 from 1.000 to 0.923, so it was not selected. The remaining false positive is “How many seats are available in this elective now?”; the demo notes discuss course offerings but do not provide live seat counts.
 
+Against BM25 alone, the selected hybrid setting moved Hit@1 from 47/52 to 48/52 and MRR from 0.946 to 0.962 on this same development set. That is a one-query top-rank gain, not evidence that hybrid retrieval will outperform BM25 on a larger or independent corpus.
+
 The four Hit@1 misses all placed the expected file at rank 2: whether a bulletin guarantees a course will run; when students can see the semester's course list; where the binding enrollment rules are; and which document lists courses actually running this term. This explains the observed MRR of 0.962 on this set.
 
 The benchmark is small and self-authored. The weighting was selected on this same development set, and relevance labels identify source files rather than exact supporting passages. The report at `reports/retrieval-ablation.json` includes per-query retrieved sources and the model revision. It is a development comparison, not an independent test score.
